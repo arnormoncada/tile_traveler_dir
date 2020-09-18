@@ -25,27 +25,24 @@ while True:
         if directions == "N":
             x,y = stadsetning(directions,x,y)
         else:
-            print("Not a valid direction!")
-    if x==1 and y == 2:
-        print("You can travel: (N)orth")
-        print("You can travel: (S)outh")
-        print("You can travel: (E)ast")
+            print("Not a valid direction!")    
+    elif x==1 and y == 2:
+        print("You can travel: (N)orth or (E)ast or (South).")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "N" or "S" or "E":
+        if directions == "N" or directions == "S" or directions == "E":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==1 and y == 3:
-        print("You can travel: (S)outh")
-        print("You can travel: (E)ast)")
+    elif x==1 and y == 3:
+        print("You can travel: (E)ast) or (S)outh.")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "S" or "E":
+        if directions == "S" or directions == "E":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==2 and y == 1:
+    elif x==2 and y == 1:
         print("You can travel: (N)orth")
         directions = input("Direction: ")
         directions = directions.upper()
@@ -53,43 +50,43 @@ while True:
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==2 and y==2:
-        print("You can travel: (S)outh")
-        print("You can travel: (W)est)")
+    elif x==2 and y==2:
+        print("You can travel: (S)outh or (W)est.")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "S" or "W":
+        if directions == "S" or directions == "W":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==2 and y==3:
-        print("You can travel: (E)ast")
-        print("You can travel: (W)est)")
+    elif x==2 and y==3:
+        print("You can travel: (E)ast or (W)est.")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "W" or "E":
+        if directions == "W" or directions == "E":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==3 and y==3:
-        print("You can travel: (S)outh")
-        print("You can travel: (W)est)")
+    elif x==3 and y==3:
+        print("You can travel: (S)outh or (W)est.")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "S" or "W":
+        if directions == "S" or directions == "W":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==3 and y==2:
-        print("You can travel: (S)outh")
-        print("You can travel: (N)orth)")
+    elif x==3 and y==2:
+        print("You can travel: (N)orth or (S)outh.")
         directions = input("Direction: ")
         directions = directions.upper()
-        if directions == "S" or "N":
+        if directions == "S" or directions == "N":
             x,y = stadsetning(directions,x,y)
         else:
             print("Not a valid direction!")
-    if x==3 and y==1:
+    elif x==3 and y==1:
         break
 
 print("Victory!")
+        
+        
+        
+
