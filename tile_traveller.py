@@ -19,7 +19,7 @@ def stadsetning(direct, x, y): # Benedikt hjálpaði okkur með þetta
 
 while True:
     if x == 1 and y == 1:
-        print("You can travel: (N)orth")
+        print("You can travel: (N)orth.")
         directions = input("Direction: ")
         directions = directions.upper()
         if directions == "N":
@@ -27,7 +27,7 @@ while True:
         else:
             print("Not a valid direction!")    
     elif x==1 and y == 2:
-        print("You can travel: (N)orth or (E)ast or (South).")
+        print("You can travel: (N)orth or (E)ast or (S)outh.")
         directions = input("Direction: ")
         directions = directions.upper()
         if directions == "N" or directions == "S" or directions == "E":
@@ -35,7 +35,7 @@ while True:
         else:
             print("Not a valid direction!")
     elif x==1 and y == 3:
-        print("You can travel: (E)ast) or (S)outh.")
+        print("You can travel: (E)ast or (S)outh.")
         directions = input("Direction: ")
         directions = directions.upper()
         if directions == "S" or directions == "E":
@@ -43,7 +43,7 @@ while True:
         else:
             print("Not a valid direction!")
     elif x==2 and y == 1:
-        print("You can travel: (N)orth")
+        print("You can travel: (N)orth.")
         directions = input("Direction: ")
         directions = directions.upper()
         if directions == "N":
